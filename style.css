@@ -15,13 +15,13 @@ header{
 }
 header nav a{
   color: #333;
-  padding: 14px 20px;
+  padding: 5px;
   text-decoration: none;
   text-align: center;
 
 }
 .search-section{
-  background-image:url(man.jpg);
+  background-image:url(VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1\ \(1\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -92,4 +92,34 @@ header nav a{
   padding-top: 20px;
   font-size: 17px;
   font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 10px;
+  font-weight: bold;
 }
