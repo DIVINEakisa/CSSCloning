@@ -471,6 +471,71 @@ p.subtitle {
   object-fit: cover;
   border-radius: 10px;
 }
+.icon-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  gap: 1px;
+  padding-top: 25px;
+  font-family: Arial, sans-serif;
+  /* margin-left: -12vw;
+  padding-left: 5vw; */
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-box img {
+  width: 40px; 
+  height: auto;
+  margin-left: -10vw;
+}
+
+.icon-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-left: 6vw;
+  padding-bottom: 40px;
+ 
+}
+.icon-bold{
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-left: -9vw;
+  text-align: left;
+  padding-left: 70px;
+}
+.icon-bold1{
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-left: -7vw;
+  text-align: left;
+  padding-left: 100px
+}
+.icon-bold2{
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-left: -5vw;
+  text-align: left;
+  padding-left: 100px
+}
+.icon-bold3{
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-left: -5vw;
+  text-align: left;
+  padding-left: 100px
+}
 
 .girl-container{
   background-image: url(732141-0_2-VRBO_HOSTS_LA_SAUNA_NEBELING_0101.jpeg);
