@@ -1,16 +1,21 @@
-document.getElementById('signInForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const message = document.getElementById('message');
-  
-    // Dummy validation
-    if (email === "user@example.com" && password === "password123") {
-      message.style.color = "green";
-      message.textContent = "Sign-in successful!";
+let lastScrollY = window.scrollY;
+  const barCenter = document.querySelector('.bar');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      
+      barCenter.style.position = 'fixed';
+      barCenter.style.top = '0';
+      barCenter.style.left = '-1vw'; 
+      barCenter.style.right = '3vw';
+      barCenter.style.zIndex = '1000';
     } else {
-      message.style.color = "red";
-      message.textContent = "Invalid email or password.";
+      
+      barCenter.style.position = 'relative';
     }
+
+    lastScrollY = currentScrollY;
   });
   

@@ -72,30 +72,122 @@ header nav a{
   cursor: pointer;
   height:40px;
 }
-.send-message{
-  background-color: #fff;
-  color: #333;
-  padding: 6px;
-  text-align: center;
+.msg-bar {
+  background-color: #0f1c38; 
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  background-color: #37127c;
-  border: 1px solid #ccc;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.msg-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-circle {
+  background-color: #a3c2f5; 
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.register-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: bold;
   border-radius: 20px;
-  width:98%;
-  height: 80px;
- 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.send-message p{
-  color: #f3eded;
-  text-align: left;
-  padding-top: 20px;
-  font-size: 17px;
-  font-family: 'Courier New', Courier, monospace;
+
+.register-btn:hover {
+  background-color: #0056cc;
 }
+
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.msg-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #f5f5f5;
+padding: 15px 25px;
+border-radius: 10px;
+margin: 20px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+margin-left: 5vw;
+background-color: #0f1c38;
+}
+
+.msg-content {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.circle-msg {
+background-color: #95c6fa;
+border-radius: 50%;
+padding: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.msg-text {
+font-size: 15px;
+color: white;
+}
+
+.register-btn {
+background-color: #007BFF;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.register-btn:hover {
+background-color: #0056b3;
+}
+
+
 h2 {
-  margin-bottom: 20px;
+text-align: left;
+margin: 30px 20px 10px;
+font-size: 24px;
+color: #0c2355;
+margin-left: 5vw;
 }
+
 
 .card-container {
   display: flex;
@@ -503,7 +595,56 @@ top: 0;
 margin-top: -10vw;
  
 }
+[last-link] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
 
+/* Each column in the footer */
+[last-link] > div {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+/* Section headers */
+.footer-text h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Footer links */
+.footer-link a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-link a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 768px) {
+  [last-link] {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  [last-link] > div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 
 
 

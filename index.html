@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="bar">
     <div class="logo"><img src="logo.svg" alt="Fewo-direkt"></div>
  <nav>
 <a href="#" style="border:1px solid;border-radius: 8px;padding: 5px;">Download TheaApp <img src="downoladicon.png" alt="DownloadIcon" style="width: 3%;height: 20px;"></a>
@@ -28,11 +28,17 @@
   <input type="submit" value="Seek" />
 </form>
  </section><br><br>
- <section class="send-message">
-  <img src="messa.png" alt="Message Icon">
-<p>Sign in to send a message to the host and get more details about a listing.</p>
-<button style="color:white;border: 0px solid black;border-radius: 20px;background-color: blue;width: 5%;height: 32px;justify-content: space-between;">Register</button>
- </section>
+ <div class="msg-bar">
+  <div class="msg-content">
+    <div class="circle-msg">
+      <img src="message.svg" alt="Message Icon" width="20" height="20" class="msg-icon">
+    </div>
+    <span class="msg-text">
+      Sign in to send a message to the host and get more details about a listing.
+    </span>
+  </div>
+  <button class="register-btn">Register</button>
+</div>
  <section class="Accomodation">
   <h2>Find accommodations to suit your taste</h2>
   <div class="card-container">
