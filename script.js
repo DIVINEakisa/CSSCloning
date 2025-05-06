@@ -1,5 +1,5 @@
 let lastScrollY = window.scrollY;
-  const barCenter = document.querySelector('.bar');
+  const barCenter = document.querySelector('.bar-center');
 
   window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
