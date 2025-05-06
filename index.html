@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign In</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo"><img src="logo.svg" alt="Fewo-direkt"></div>
  <nav>
-<a href="#">Download TheaApp</a>
+<a href="#" style="border:1px solid;border-radius: 8px;padding: 5px;">Download TheaApp <img src="downoladicon.png" alt="DownloadIcon" style="width: 3%;height: 20px;"></a>
 <a href="#">Travel Planner</a>
 <a href="#">Registration Accomodation</a>
 <a href="#">Help</a>
@@ -18,5 +18,19 @@
 <a href="#">Register</a>
  </nav>
  </header>
+ <section class="search-section">
+<h1>FeWo-direkt – that’s how you go on holiday.</h1>
+<form action="#"method="POST">
+  <!-- <img src="location.png" alt="Location"> --><input type="text" value="Where we should we go?" required/>&nbsp;&nbsp;&nbsp;&nbsp; 
+  <input type="date" value=" May 17-May-31" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" value="Guest 2travelers" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="Seek" />
+</form>
+ </section><br><br>
+ <section class="send-message">
+  <img src="messa.png" alt="Message Icon">
+<p>Sign in to send a message to the host and get more details about a listing.</p>
+<button style="color:white;border: 0px solid black;border-radius: 20px;background-color: blue;width: 5%;height: 32px;justify-content: space-between;">Register</button>
+ </section>
 </body>
 </html>
